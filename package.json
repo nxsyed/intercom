@@ -1,7 +1,8 @@
 {
-  "name": "pwa-example",
+  "name": "intercom",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nxsyed.github.io/intercom/",
   "dependencies": {
     "antd": "^3.6.5",
     "pubnub": "^4.21.2",
@@ -14,9 +15,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
-    "babel-plugin-import": "^1.8.0"
+    "babel-plugin-import": "^1.8.0",
+    "gh-pages": "^1.2.0"
   }
 }
